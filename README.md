@@ -15,5 +15,24 @@ catalog: HashMap<String, Box<dyn Item>>;
 ```
 And you can pass in either a Book or Dvd since both objects implement the Item trait. This is possible due to dynamic dispatching.
 
+## Run Python App
+From project root:
+```bash
+cd oo-lib-python
+```
+### Install pytest
+```
+python3 -m pip install -U pytest
+```
+### Run
+Use `-B` to not create cache directories 
+```bash
+python3 -B -m app
+```
+### Run Tests
+```bash
+python3 -m pytest
+```
+
 ### Contributors
 Patrick Neill
