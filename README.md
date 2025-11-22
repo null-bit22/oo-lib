@@ -18,13 +18,13 @@ And you can pass in either a Book or Dvd since both objects implement the Item t
 ## Run Python App
 From project root:
 ```bash
-cd oo-lib-python
+cd oo-lib-py
 ```
 ### Install pytest
-```
+```bash
 python3 -m pip install -U pytest
 ```
-### Run
+### Run Demo App
 Use `-B` to not create cache directories 
 ```bash
 python3 -B -m app
@@ -32,6 +32,20 @@ python3 -B -m app
 ### Run Tests
 ```bash
 python3 -m pytest
+```
+
+## Run Rust App
+From project root:
+```bash
+cd oo-lib-rust
+```
+### Run Demo App
+```bash
+cargo run
+```
+### Run Tests
+```bash
+cargo test
 ```
 
 ### Contributors
