@@ -1,4 +1,3 @@
-
 import pytest
 from app.v1.items import Id, Book, Dvd
 from app.v1.catalog import Catalog
@@ -67,5 +66,5 @@ def test_member_cannot_borrow_items_not_in_catalog():
     assert m.is_borrowed_list_valid(cat) == False
 
 # Bad test to test CI actions
-def test_force_error():
-    assert 1 == 0
+#def test_force_error():
+    #assert 1 == 0
