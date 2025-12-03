@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest # Every job needs 'runs-on'
     steps: # The steps for each job
       - name: GitHub is checking out code... # Name is optional here
-      - uses: actions/checkout@v5
+        uses: actions/checkout@v5
 
       - name: Setup Python Environment # Another step
-      - uses: actions/setup-python@v5
+        uses: actions/setup-python@v5
         with:
           python-version: "3.13"
 
