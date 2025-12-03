@@ -18,6 +18,9 @@ jobs:
         with:
           python-version: "3.13"
 
+      - name: Navigate to app # Another step
+        run: cd oo-lib-py/
+        
       - name: Install pytest # Another step
         run: python3 -m pip install -U pytest
 
