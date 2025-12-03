@@ -65,3 +65,7 @@ def test_member_cannot_borrow_items_not_in_catalog():
     m = Member("Adam")
     m.borrow("Z8")
     assert m.is_borrowed_list_valid(cat) == False
+
+# Bad test to test CI actions
+def test_force_error():
+    assert 1 == 0
