@@ -19,9 +19,7 @@ jobs:
           python-version: "3.13"
 
       - name: Install pytest # Another step
-        run: |
-          python3 -m pip install -U pytest
+        run: python3 -m pip install -U pytest
 
       - name: Run tests # Another step
-          run: |
-            python3 -m pytest
+        run: python3 -m pytest
