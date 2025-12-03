@@ -17,12 +17,12 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.13"
-
-      - name: Navigate to app # Another step
-        run: cd oo-lib-py/
         
       - name: Install pytest # Another step
         run: python3 -m pip install -U pytest
 
-      - name: Run tests # Another step
-        run: python3 -m pytest
+      - name: Run tests # Another step !! Important: each 'run' uses a new shell
+                        # 'cd' directory changes do not persist across multiple 'runs'
+        run: |
+          cd oo-lib-py
+          python3 -m pytest
