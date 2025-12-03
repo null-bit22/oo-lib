@@ -21,6 +21,11 @@ jobs:
       - name: Install pytest # Another step
         run: python3 -m pip install -U pytest
 
+      - name: Build # Another step
+        run: |
+          cd oo-lib-py
+          python3 -m app
+      
       - name: Run tests # Another step !! Important: each 'run' uses a new shell
                         # 'cd' directory changes do not persist across multiple 'runs'
         run: |
